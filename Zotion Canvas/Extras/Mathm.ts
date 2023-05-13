@@ -24,4 +24,4 @@ function Between(infetween: Inbetween | number, to?: number): number {
   return (Math.random() * (max - min)) + min;
 }
 
-export { Between }
+export {Between }

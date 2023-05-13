@@ -2,7 +2,7 @@ import { ThreadGenerator, join } from "@motion-canvas/core/lib/threading"
 import { map } from "@motion-canvas/core/lib/tweening";
 import { PossibleVector2, Vector2 } from "@motion-canvas/core/lib/types"
 import { range } from "@motion-canvas/core/lib/utils";
-import * as Mathm from './Mathm'
+import * as Mathm from '../../Extras/Mathm'
 
 var mayvect: (x: number, y:number)=>Vector2 = 
  (x: number, y:number)=> new Vector2(x, y);

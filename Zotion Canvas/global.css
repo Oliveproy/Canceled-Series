@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/farmhouse-chalkboard');
 @import url('https://fonts.cdnfonts.com/css/pixel-millennium');
 @import url('https://fonts.cdnfonts.com/css/christmas-chalk');
 @import url('https://fonts.cdnfonts.com/css/invaders');
 @import url('https://fonts.cdnfonts.com/css/wynford');
 @import url('https://fonts.cdnfonts.com/css/heytext');
+@import url('https://fonts.cdnfonts.com/css/mateos');
 @import url('https://fonts.cdnfonts.com/css/pixies');
 
 @import url('https://fonts.cdnfonts.com/css/uni-sans-regular');
 @import url('https://fonts.cdnfonts.com/css/violet-sans');
 @import url('https://fonts.cdnfonts.com/css/comic-sans');
+
+@font-face {
+	font-family: 'StandardGalacticAlphabet';
+	src: url('//2ttf.com/webfont/Kc5TfCXli4C/webfont.ttf') format('truetype');
+}

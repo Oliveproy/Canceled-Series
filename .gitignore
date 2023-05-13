@@ -16,9 +16,9 @@ dist
 *IM.*
 
 #Important
-Certificate
+frames/
 
 #Others
 package-lock.json
-test.ts
 devcontainer.json
+DiscordID.json

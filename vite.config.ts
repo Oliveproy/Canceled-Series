@@ -1,11 +1,12 @@
 /** @type {import('vite').UserConfig} */
 import {defineConfig} from 'vite';
 import motionCanvas from '@motion-canvas/vite-plugin';
+import ffmpeg from '@motion-canvas/ffmpeg'
 import * as fs from 'fs'
 import * as path from 'path'
 
 const root = './Zotion Canvas'
-const cancels = ()=>fs.readdirSync(root, {withFileTypes: true})
+const canceled = ()=>fs.readdirSync(root, {withFileTypes: true})
   .filter(v => v.isDirectory()).filter(v => v.name.includes('Canceled')) //Filters out entries that aren't folders starting with 'Canceled'
   .map(v => v.name).filter((v,i)=>v.split('-', 2)[1]==i.toString()) //Checks if it's a valied entry
   .map(sub => {return {
@@ -17,7 +18,11 @@ const cancels = ()=>fs.readdirSync(root, {withFileTypes: true})
 		.filter(v=> v!='').join()
 	))//Gets the project file's name
   .filter((v, i)=> v.includes(`Canceled-${i}\\`)).map(v => `./${v.split('\\').join('/')}`)//Put's names into correct format
+  const cancels = ()=>[`${root}/Canceled-Test/TestProject.ts`, ...canceled()]
 
 export default defineConfig({
-  plugins: [ motionCanvas({ project: [`${root}/Canceled-Test/TestProject.ts`,...cancels()] }) ],
+  plugins: [ motionCanvas({ 
+    project: [...cancels()],
+    output: `./public/Videos`
+  }), ffmpeg() ],
 });

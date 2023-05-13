@@ -1,5 +1,5 @@
 import { PossibleColor } from "@motion-canvas/core/lib/types"
-import { GetDisc } from "../Extras/APIs"
+import { GetDisc } from "@APIs"
 
 interface Cord{
     id: string,

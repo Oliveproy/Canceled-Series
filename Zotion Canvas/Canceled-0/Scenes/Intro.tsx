@@ -94,3 +94,5 @@ export default makeScene2D(function* (view) {
 
   yield* waitFor(1)
 });
+
+// ['cyan', 'C746C2', 'DB7AD7'] 210

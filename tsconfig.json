@@ -2,7 +2,12 @@
   "extends": "@motion-canvas/2d/tsconfig.project.json",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "baseUrl": "src"
+    "baseUrl": "./Zotion Canvas",
+    "paths": {
+      "@Component": ["./Components/Profile.tsx", "./Components/Profo.tsx"],
+      "@Images/*": [ "../Custom/Images/*"],
+      "@APIs": ["./Extras/API"]
+    }
   },
   "include": ["Zotion Canvas"]
 }

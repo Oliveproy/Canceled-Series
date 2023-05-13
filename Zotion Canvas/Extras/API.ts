@@ -1,6 +1,6 @@
 import { Cord } from "../Components/Procord"
-import { company } from "./API"
 
+type company = 'Youtube' | 'Twich' | 'Discord' | '' | '' | '' | ''
 function logos(Comp_url: URL | company): URL{
 	var _url: URL; const Comurl = !Comp_url.toString().includes('.')? 'isname' : 'isurl'
 	const ifcompany = (Comp_url as company); const ifurl = (Comp_url as URL);
@@ -20,4 +20,4 @@ async function GetDisc(id:string): Promise<Cord> {
 	return Corded
 }
 
-export {logos, GetDisc}
+export { logos, GetDisc };
